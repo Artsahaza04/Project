@@ -7,6 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>bienvenue sur cette site</h2>
-</body>
+    <h2 id="titre">bienvenue sur cette site</h2>
+    <button id="btn">changer Malgache</button>
+    <button id="btn1">mode nuit</button>
+    <script>
+        let button = document.getElementById("btn")
+        let title = document.getElementById("titre")
+        let button_1 = document.getElementById("btn1")
+        
+
+        button.addEventListener("click",()=>{
+            title.innerText="tongasoa amin'ito site ito"
+        })
+        button_1.addEventListener("click",()=>{
+            title.style.color = "black";
+        })
+    </script>
+</body> 
 </html>
