@@ -6,21 +6,26 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
-    <h2 id="titre">bienvenue sur cette site</h2>
-    <button id="btn">changer Malgache</button>
-    <button id="btn1">mode nuit</button>
+<body id="body"> 
+    <div class="content">
+        <h2 id="titre">bienvenue sur cette site</h2>
+        <button id="btn">changer Malgache</button>
+        <button id="btn1">mode nuit</button>  
+    </div>
+    
     <script>
         let button = document.getElementById("btn")
         let title = document.getElementById("titre")
         let button_1 = document.getElementById("btn1")
+        let body = document.getElementById("body")
+
         
 
         button.addEventListener("click",()=>{
             title.innerText="tongasoa amin'ito site ito"
         })
         button_1.addEventListener("click",()=>{
-            title.style.color = "black";
+            body.style.backgroundColor = "black";
         })
     </script>
 </body> 
